@@ -1,0 +1,6 @@
+{
+  "name": "Purin Experience Lab",
+  "description": "千媃的個人品牌設計作品集，結合粉絲文化、角色IP、社群經營與應援活動企劃，探索人與品牌之間的情感連結。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
