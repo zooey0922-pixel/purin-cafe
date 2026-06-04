@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-cream: #F8E7A1;
+  --color-brand-caramel: #A86A3D;
+  --color-brand-beige: #FFF8F0;
+  --color-brand-white: #FAFAFA;
+  --color-brand-dark: #2C1A11;
+  --color-brand-cream-light: #FFFCEA;
+  --color-brand-caramel-light: #EFE4DC;
+  
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  
+  --shadow-warm-sm: 0 2px 8px -2px rgba(168, 106, 61, 0.08);
+  --shadow-warm-md: 0 8px 24px -4px rgba(168, 106, 61, 0.12);
+  --shadow-warm-lg: 0 16px 48px -8px rgba(168, 106, 61, 0.16);
+}
+
+/* Custom utility styles for smooth scrolling and ambient scrollbars */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-brand-beige);
+  color: var(--color-brand-dark);
+}
+
+/* Custom scrollbar matching caramel warm design */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-beige);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-caramel);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8F552E;
+}
+
+/* Beautiful custom typing style or pulse animations */
+@keyframes cute-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-cute-float {
+  animation: cute-float 4s ease-in-out infinite;
+}
