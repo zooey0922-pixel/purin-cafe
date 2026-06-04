@@ -24,10 +24,10 @@ import { ABOUT_STORY, PROJECTS, JOURNAL_ENTRIES, GALLERY_ITEMS, CONCEPT_PROJECT 
 import { Project, JournalEntry, GalleryItem } from './types';
 
 // Import components
-import ProjectCard from './components/ProjectCard';
-import ProjectModal from './components/ProjectModal';
-import JournalModal from './components/JournalModal';
-import InteractiveBoard from './components/InteractiveBoard';
+import ProjectCard from './ProjectCard';
+import ProjectModal from './ProjectModal';
+import JournalModal from './JournalModal';
+import InteractiveBoard from './InteractiveBoard';
 
 export default function App() {
   // Navigation active identifier based on scrolling position
